@@ -292,43 +292,6 @@
       </div>
 
 
-      <!-- Calendar -->
-
-      <div class="calendar">
-
-        <div class="cal-head">
-          <span>‹</span>
-          <strong>NOVEMBER 2026</strong>
-          <span>›</span>
-        </div>
-
-        <div class="weekdays">
-          <span>SU</span>
-          <span>MO</span>
-          <span>TU</span>
-          <span>WE</span>
-          <span>TH</span>
-          <span>FR</span>
-          <span>SA</span>
-        </div>
-
-        <div
-          class="days"
-          id="calendarDays"
-        ></div>
-
-      </div>
-
-
-      <button
-        class="gold-btn"
-        id="calendarBtn"
-      >
-        ADD TO CALENDAR
-      </button>
-
-    </section>
-
 
     <!-- =======================================
          VENUE
@@ -341,14 +304,18 @@
       </h2>
 
       <p class="venue-name">
-        ST martin de pores church palarivattom
+        SNDP Hall
+      </p>
+
+      <p class="venue-location">
+        Mamangalam, Ernakulam
       </p>
 
       <div class="map-card">
 
         <iframe
-          title="Wedding reception location"
-          src="https://www.google.com/maps?q=ST%20martin%20de%20pores%20church%20palarivattom&output=embed"
+          title="SNDP Hall, Mamangalam"
+          src="https://www.google.com/maps?q=SNDP%20Hall%2C%20Cherukumaroth%20Rd%2C%20Mamangalam%2C%20Elamakkara%2C%20Ernakulam%2C%20Kerala%20682025&output=embed"
           loading="lazy">
         </iframe>
 
@@ -358,7 +325,7 @@
         class="gold-btn link-btn"
         target="_blank"
         rel="noopener"
-        href="https://www.google.com/maps/dir/?api=1&destination=ST%20martin%20de%20pores%20church%20palarivattom"
+        href="https://www.google.com/maps/dir/?api=1&destination=SNDP%20Hall%2C%20Cherukumaroth%20Rd%2C%20Mamangalam%2C%20Elamakkara%2C%20Ernakulam%2C%20Kerala%20682025"
       >
         GET DIRECTIONS
       </a>
@@ -447,46 +414,49 @@
 
       <form id="rsvpForm">
 
-  <input
-    id="rsvpName"
-    type="text"
-    required
-    maxlength="60"
-    placeholder="Your name"
-  >
+        <input
+          id="rsvpName"
+          type="text"
+          required
+          maxlength="60"
+          placeholder="Your name"
+        >
 
-  <select id="attendance" required>
-    <option value="attending">Joyfully attending</option>
-    <option value="not_attending">Unable to attend</option>
-  </select>
+        <select id="attendance" required>
+          <option value="attending">Joyfully attending</option>
+          <option value="not_attending">Unable to attend</option>
+        </select>
 
-  <input
-    id="guestCount"
-    type="number"
-    min="1"
-    max="20"
-    value="1"
-    required
-    placeholder="Number of guests"
-  >
+        <input
+          id="guestCount"
+          type="number"
+          min="1"
+          max="20"
+          value="1"
+          required
+          placeholder="Number of guests"
+        >
 
-  <textarea
-    id="rsvpMessageText"
-    maxlength="500"
-    placeholder="Message (optional)"
-  ></textarea>
+        <textarea
+          id="rsvpMessageText"
+          maxlength="500"
+          placeholder="Message (optional)"
+        ></textarea>
 
-  <button class="gold-btn" type="submit" id="rsvpSubmit">
-    CONFIRM
-  </button>
+        <button
+          class="gold-btn"
+          type="submit"
+          id="rsvpSubmit"
+        >
+          CONFIRM
+        </button>
 
-</form>
-
-<p id="rsvpMessage" class="form-message" role="status"></p>
+      </form>
 
       <p
         id="rsvpMessage"
         class="form-message"
+        role="status"
       ></p>
 
     </div>
@@ -499,7 +469,7 @@
   ========================================== -->
 
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script src="script.js"></script>
+  <script src="script.js"></script>
 
 </body>
 </html>
